@@ -4,7 +4,7 @@ const styles = {
     containerStyle: {
       float: "left",
       margin:"20px",
-      border: "1pt solid black",
+      border: "3pt solid black",
       width:"205px",
       height:"205px",
       textAlign: "center",
