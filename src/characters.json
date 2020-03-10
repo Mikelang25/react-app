@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Chelsea",
+        "image": "./images/chelsea.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Manchester United",
+        "image": "../images/manchester_united.png"
+    },
+    {
+        "id": 3,
+        "name": "Manchester City",
+        "image": "../../images/manchester_city.png"
+    }
+]
