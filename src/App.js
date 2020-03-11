@@ -9,7 +9,8 @@ class App extends React.Component {
     characters,
     answer: "",
     selected:[],
-    score:0
+    score:0,
+    highSchore:0
   };
 
   shuffleCharacters(array) {
@@ -39,13 +40,13 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <div className="row">
-          <div className="col-md-4 text-center header">Clicky Game</div>
+          <div className="col-md-4 text-center header">Premier League Pick Game</div>
           <div className="col-md-4 text-center header"><p>{this.state.answer}</p></div>
     <div className="col-md-4 text-center header"><p>Score: {this.state.score}</p></div>
         </div>
         <div className="row">
           <div className="col-md-3 text-center dir-container">
-            <h2>Character Click Game</h2>
+            <h2>Team Click Game</h2>
             <p>Click on the images to earn points, but don't click the same one twice!</p>
           </div>
           <div className="col-md-9 char-container">

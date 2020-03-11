@@ -5,16 +5,16 @@ body{
 
 .header{
   background-color: gray;
-  height:85px;
+  height:65px;
   font-size: 24pt;
   font-weight: bold;
   padding-top:15px;
 }
 
 .char-container{
-  height:80vh;
+  height:90vh;
   border:1pt solid black;
-  background-color: white;  
+  background-color:#cf554c;  
 }
 
 .dir-container{
@@ -29,6 +29,9 @@ body{
   position: relative;
   margin: 0 auto;
   margin-top:20px;
-  border:1pt solid black;
-  height:75vh;
+  border:3pt solid black;
+  border-radius:5px;
+  height:85vh;
+  background-color: white;
+  background-image: URL('./images/tweed.png');
 }

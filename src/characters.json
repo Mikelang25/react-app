@@ -48,5 +48,30 @@
         "id": 10,
         "name": "Swansea",
         "image": "swansea.jpg"
+    },    
+    {
+        "id": 11,
+        "name": "Aston Villa",
+        "image": "astonvilla.png"
+    },    
+    {
+        "id": 12,
+        "name": "Hull City",
+        "image": "hull.png"
+    },    
+    {
+        "id": 13,
+        "name": "West Ham United",
+        "image": "westham.png"
+    },    
+    {
+        "id": 14,
+        "name": "Sheffield United",
+        "image": "sheffield.png"
+    },    
+    {
+        "id": 15,
+        "name": "Norwich City",
+        "image": "norwich.png"
     }
 ]

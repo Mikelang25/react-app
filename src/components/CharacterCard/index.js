@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const styles = {
     containerStyle: {
@@ -8,7 +9,10 @@ const styles = {
       width:"205px",
       height:"205px",
       textAlign: "center",
-      borderRadius:"5px"
+      borderRadius:"5px",
+      cursor:"pointer",
+      backgroundColor:"white",
+      boxShadow: "10px 5px 5px black"
     },
     image:{
         marginTop:"3px"
@@ -17,7 +21,7 @@ const styles = {
 
 function CharacterCard(props){
     return (
-        <div style={styles.containerStyle} onClick={() => props.markedSelected(props.id)}>
+        <div className="containerStyle" style={styles.containerStyle} onClick={() => props.markedSelected(props.id)}>
             <img style={styles.image} alt={props.name} src={props.image} id={props.id}/>
         </div>
     );    
