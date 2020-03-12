@@ -10,7 +10,7 @@ class App extends React.Component {
     answer: "",
     selected:[],
     score:0,
-    highSchore:0
+    highScore:0
   };
 
   shuffleCharacters(array) {
@@ -20,13 +20,22 @@ class App extends React.Component {
     }
   }
 
+  updateHigh(){
+    if(this.state.score > this.state.highScore){
+      this.setState({
+        highScore:this.state.score
+      })
+    }
+  }
+
   markedSelected = id =>{
       if(this.state.selected.includes(id)){
         this.setState({
           answer:"That guess is wrong!",
           selected:[],
-          score:0
+          score:0          
         });
+        this.updateHigh()
       }else{
         this.state.selected.push(id)
         this.setState({
@@ -42,7 +51,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-md-4 text-center header">Premier League Pick Game</div>
           <div className="col-md-4 text-center header"><p>{this.state.answer}</p></div>
-    <div className="col-md-4 text-center header"><p>Score: {this.state.score}</p></div>
+    <div className="col-md-4 text-center header"><p>Score: {this.state.score} | Highscore: {this.state.highScore}</p></div>
         </div>
         <div className="row">
           <div className="col-md-3 text-center dir-container">
